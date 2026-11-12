@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mateen Rabi Baig | Frontend Developer (React, TypeScript)</title>
+    <meta
+      name="description"
+      content="Frontend developer with a year of production experience building React and TypeScript apps for a multi-client SaaS platform. See my projects, experience and contact details."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mateen Rabi Baig | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Frontend developer working with React, TypeScript, React Native, and REST APIs. Selected projects, experience, and contact details."
+    />
+    <meta property="og:image" content="/og-image.svg" />
+    <link id="site-favicon" rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Set the theme before first paint to avoid a flash of the wrong one.
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var requested = params.get("theme");
+        var stored = localStorage.getItem("theme");
+        var theme =
+          requested === "dark" || requested === "light"
+            ? requested
+            : stored === "dark" || stored === "light"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+        document.documentElement.dataset.theme = theme;
+        var favicon = document.getElementById("site-favicon");
+        if (favicon) favicon.setAttribute("href", theme === "dark" ? "/favicon-dark-theme.svg" : "/favicon-light-theme.svg");
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <style>
+    #light-theme { display: inline; }
+    #dark-theme { display: none; }
+    @media (prefers-color-scheme: dark) {
+      #light-theme { display: none; }
+      #dark-theme { display: inline; }
+    }
+  </style>
+  <image id="light-theme" href="/favicon-light.svg" x="0" y="344" width="1000" height="312" preserveAspectRatio="none" />
+  <image id="dark-theme" href="/favicon-dark.svg" x="0" y="344" width="1000" height="312" preserveAspectRatio="none" />
+</svg>
