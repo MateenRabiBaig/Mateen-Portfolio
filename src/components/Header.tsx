@@ -29,10 +29,6 @@ export default function Header() {
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem("theme", theme);
-    const favicon = document.querySelector<HTMLLinkElement>("#site-favicon");
-    if (favicon) {
-      favicon.href = theme === "dark" ? "/favicon-dark-theme.svg" : "/favicon-light-theme.svg";
-    }
   }, [theme]);
 
   // Highlight the section currently in view (scrollspy).

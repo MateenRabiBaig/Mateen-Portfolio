@@ -15,7 +15,18 @@
       content="Frontend developer working with React, TypeScript, React Native, and REST APIs. Selected projects, experience, and contact details."
     />
     <meta property="og:image" content="/og-image.svg" />
-    <link id="site-favicon" rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon-light.svg?v=mateen-logo-2"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon-dark.svg?v=mateen-logo-2"
+      media="(prefers-color-scheme: dark)"
+    />
     <script>
       // Set the theme before first paint to avoid a flash of the wrong one.
       (function () {
@@ -31,8 +42,6 @@
                 ? "dark"
                 : "light";
         document.documentElement.dataset.theme = theme;
-        var favicon = document.getElementById("site-favicon");
-        if (favicon) favicon.setAttribute("href", theme === "dark" ? "/favicon-dark-theme.svg" : "/favicon-light-theme.svg");
       })();
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
