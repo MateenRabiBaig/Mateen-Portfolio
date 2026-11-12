@@ -1,54 +1,73 @@
-# Personal Portfolio
+# Mateen Rabi Baig — Portfolio
 
-A single-page portfolio built with React + TypeScript + Vite. Clean editorial
-design: warm off-white background, charcoal-navy text, one deep-teal accent,
-square edges and thin borders. No dependencies beyond React.
+This repository contains the source for my personal portfolio website.
 
-## Run
+I’m a frontend developer from India with production experience building React
+and TypeScript applications for a multi-client IoT SaaS platform. I enjoy
+turning product designs into dependable interfaces, connecting them to APIs,
+and improving the parts of an application that become difficult to maintain at
+scale.
 
-```bash
-npm install
-npm run dev      # http://localhost:5173
-npm run build    # production build in dist/
-```
+The portfolio brings together my professional experience, selected projects,
+technical skills, education, and contact details in one place.
 
-## Where the content lives
+## What the portfolio covers
 
-Everything you may want to change is in **`src/data/profile.ts`**:
+- React and TypeScript work from my current frontend role at Firewires OneIoT
+- Full-stack projects built with React, Node.js, Express, FastAPI, and databases
+- React Native work, including a peer-to-peer file-transfer application
+- Practical experience with API integration, authentication, validation,
+  dashboards, data-heavy tables, and responsive interfaces
+- Education, certifications, public project links, and a downloadable CV
 
-| What | Where |
-|---|---|
-| Name, role, intro, email, GitHub/LinkedIn/X | `person` |
-| About paragraphs and the facts row | `about` |
-| Skill groups | `skillGroups` |
-| Projects (name, purpose, contribution, tech, links, image) | `projects` |
-| Experience timeline | `experience` |
-| Education & certificates | `education`, `certificates` |
+## Selected projects
 
-Also update when you personalize:
+- **Jira Clone** — Kanban-based project management application with
+  authentication, task workflows, collaboration, search, filtering, and file
+  attachments.
+- **Crickdle** — Wordle-style cricket guessing game with a REST API and a
+  React Native version.
+- **LocalDrop** — Peer-to-peer file transfer between phones on the same Wi-Fi
+  network using mDNS, TCP, and TLS.
+- **AI Studio** — Full-stack AI recipe assistant with user accounts, private
+  conversation history, preferences, rate limiting, and retry handling.
 
-- `index.html` — `<title>`, meta description, and Open Graph tags
-- `public/favicon.svg` — aspect-ratio-safe favicon wrapper; the light/dark logo assets live in `public/favicon-light.svg` and `public/favicon-dark.svg`
-- `public/cv.pdf` — keep this as your current CV
-- `src/assets/projects/` — swap in your own screenshots
+More project details, technology choices, live demos, and source repositories
+are available on the portfolio itself.
 
-## Structure
+## Built with
 
-```
+- React 19 and TypeScript
+- Vite
+- CSS with a small, custom design system
+- `simple-icons` for technology and social marks
+- Responsive layout with light and dark themes
+- Accessible navigation, focus states, form validation, and a skip-to-content
+  link
+
+## Repository structure
+
+```text
 src/
-  data/profile.ts        all content (the only file to edit for copy)
-  components/            Header, Hero, About, Skills, Projects,
-                         Experience, Education, Contact, Footer, Section
-  styles/global.css      the whole design system
-  assets/projects/       project screenshots
+  components/       Portfolio sections and reusable UI components
+  data/profile.ts   Personal content, projects, skills, and experience
+  styles/           Global layout, theme, typography, and responsive styles
+  assets/           Project screenshots and brand assets
+public/
+  cv.pdf            Public CV used by the Download CV button
+  favicon*.svg      Light/dark browser-tab logo assets
+  og-image.svg      Social sharing image
 ```
 
-## Notes
+The portfolio content is intentionally kept in `src/data/profile.ts` so that
+project descriptions, links, experience, skills, education, and contact
+details can be reviewed or updated without searching through the components.
 
-- The contact form validates input and sends through FormSubmit. The first
-  submission requires confirming the activation email sent to the configured
-  inbox before deliveries begin.
-- The Jira Clone card intentionally has no live demo link — its deployment
-  has been retired. Add `liveUrl` back in `profile.ts` when redeployed.
-- Keyboard support: skip-to-content link, visible focus rings, Escape closes
-  the mobile menu, form errors are announced with `role="alert"`.
+## Contact
+
+- Email: [mateenrabibaig@gmail.com](mailto:mateenrabibaig@gmail.com)
+- GitHub: [MateenRabiBaig](https://github.com/MateenRabiBaig)
+- LinkedIn: [Mateen Rabi Baig](https://www.linkedin.com/in/MateenRabiBaig)
+
+The portfolio contact form uses FormSubmit for delivery. The first submission
+requires confirming the activation email before messages can be delivered.
